@@ -45,14 +45,19 @@ const callKeepOptions = {
 };
 
 async function fetchAccessToken() {
-  const response = await fetch(
-    'https://XXXXXX.ngrok.io/accessToken?identity=' +
-      identity +
-      '&os=' +
-      Platform.OS
-  );
-  const accessToken = await response.text();
+  // const identity = 'iainheng';
 
+  // const response = await fetch(
+  //   'https://b7b9-42-190-205-7.ngrok-free.app/accessToken?identity=' +
+  //     identity +
+  //     '&os=' +
+  //     Platform.OS
+  // );
+  // const accessToken = await response.text();
+
+  // console.log(`Access token(${identity}): ${accessToken}`);
+
+  const accessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTSzUzNDk4MzczZWJiYjhlNDEyZTg1YzkzNzQwMTIwN2VmLTE2ODg0NjE3ODIiLCJncmFudHMiOnsiaWRlbnRpdHkiOiJmaW9ubGF3Iiwidm9pY2UiOnsib3V0Z29pbmciOnsiYXBwbGljYXRpb25fc2lkIjoiU0s1MzQ5ODM3M2ViYmI4ZTQxMmU4NWM5Mzc0MDEyMDdlZiJ9fX0sImlhdCI6MTY4ODQ2MTc4MiwiZXhwIjoxNjg4NDY1MzgyLCJpc3MiOiJTSzUzNDk4MzczZWJiYjhlNDEyZTg1YzkzNzQwMTIwN2VmIiwic3ViIjoiQUNjMTk1YWJmMmE0OWRkYjFiNGZlMTA5M2NkN2Y1MzcwMiJ9.qhp_3r0MsG5b-5RqgydB8QKwjjKcLOD8MG8vxkJm0h8';
   return accessToken;
 }
 
@@ -93,6 +98,8 @@ export function App() {
   }
 
   async function call() {
+    console.log('Pressed call.');
+
     if (to === '') {
       return;
     }
