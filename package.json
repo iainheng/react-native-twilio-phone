@@ -41,6 +41,7 @@
   },
   "homepage": "https://github.com/MrHertal/react-native-twilio-phone#readme",
   "devDependencies": {
+    "@babel/runtime": "^7.22.6",
     "@react-native-community/eslint-config": "^2.0.0",
     "@react-native-firebase/app": "^14.5.1",
     "@react-native-firebase/messaging": "^14.5.1",

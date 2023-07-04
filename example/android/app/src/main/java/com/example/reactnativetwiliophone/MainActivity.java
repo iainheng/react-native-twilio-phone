@@ -1,6 +1,8 @@
 package com.example.reactnativetwiliophone;
 
 import com.facebook.react.ReactActivity;
+import io.wazo.callkeep.RNCallKeepModule; // Add these import lines
+import androidx.annotation.NonNull;
 
 public class MainActivity extends ReactActivity {
 
@@ -12,4 +14,15 @@ public class MainActivity extends ReactActivity {
   protected String getMainComponentName() {
     return "TwilioPhoneExample";
   }
+
+  // Permission results
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        switch (requestCode) {
+            case RNCallKeepModule.REQUEST_READ_PHONE_STATE:
+                RNCallKeepModule.onRequestPermissionsResult(requestCode, permissions, grantResults);
+                break;
+        }
+    }
 }

@@ -24,5 +24,9 @@ const callKeepOptions = {
 };
 
 RNTwilioPhone.handleBackgroundState(callKeepOptions);
-
+// AppRegistry.registerHeadlessTask('RNCallKeepBackgroundMessage', () => ({ name, callUUID, handle }) => {
+//   // Make your call here
+  
+//   return Promise.resolve();
+// });
 AppRegistry.registerComponent(appName, () => App);

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "644789498406",
+    "project_id": "twilio-voip-example",
+    "storage_bucket": "twilio-voip-example.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644789498406:android:f6d6c65cae4e17ca61ace7",
+        "android_client_info": {
+          "package_name": "com.example.reactnativetwiliophone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644789498406-199p1ppubqir5lotndsgs6aph52udvps.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuK_RiBLiFSqObgHjkB260OS7AbrgOZmU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644789498406-199p1ppubqir5lotndsgs6aph52udvps.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
