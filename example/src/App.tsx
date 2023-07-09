@@ -57,7 +57,7 @@ async function fetchAccessToken() {
 
   // console.log(`Access token(${identity}): ${accessToken}`);
   console.log(identity);
-  const accessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTSzUzNDk4MzczZWJiYjhlNDEyZTg1YzkzNzQwMTIwN2VmLTE2ODg0NjE3ODIiLCJncmFudHMiOnsiaWRlbnRpdHkiOiJmaW9ubGF3Iiwidm9pY2UiOnsib3V0Z29pbmciOnsiYXBwbGljYXRpb25fc2lkIjoiU0s1MzQ5ODM3M2ViYmI4ZTQxMmU4NWM5Mzc0MDEyMDdlZiJ9fX0sImlhdCI6MTY4ODQ2MTc4MiwiZXhwIjoxNjg4NDY1MzgyLCJpc3MiOiJTSzUzNDk4MzczZWJiYjhlNDEyZTg1YzkzNzQwMTIwN2VmIiwic3ViIjoiQUNjMTk1YWJmMmE0OWRkYjFiNGZlMTA5M2NkN2Y1MzcwMiJ9.qhp_3r0MsG5b-5RqgydB8QKwjjKcLOD8MG8vxkJm0h8';
+  const accessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTS2YwOTY1Y2ZmYzc1YWMzMDlhYTc4NGVhZmUzYTljNDY3LTE2ODg0ODE3MjAiLCJncmFudHMiOnsiaWRlbnRpdHkiOiJmaW9ubGF3Iiwidm9pY2UiOnsiaW5jb21pbmciOnsiYWxsb3ciOnRydWV9LCJvdXRnb2luZyI6eyJhcHBsaWNhdGlvbl9zaWQiOiJBUGNjZjI3MDQ3YmYwYjkzNGI1ZmY3NzYzMjQyNGJkOTFiIn0sInB1c2hfY3JlZGVudGlhbF9zaWQiOiJDUmIzYzNjNDVmMGUxMjA1NzczOGVhOTA5MWU2YTk4NjY5In19LCJpYXQiOjE2ODg0ODE3MjAsImV4cCI6MTY4ODQ4NTMyMCwiaXNzIjoiU0tmMDk2NWNmZmM3NWFjMzA5YWE3ODRlYWZlM2E5YzQ2NyIsInN1YiI6IkFDMTAxMDgzYjZhZGVmZmEzOWQ0NTc5ZWNjMDYwOThlNTcifQ.ILNK-YIyFbv6XS9ldakN5kC9rlRoCv3qim49myCnL6U';
   return accessToken;
 }
 
@@ -110,6 +110,7 @@ export function App() {
     setCallInProgress(true);
 
     try {
+      console.log(to, 'to');
       await RNTwilioPhone.startCall(to, 'My friend', from);
     } catch (e) {
       console.log(e);
